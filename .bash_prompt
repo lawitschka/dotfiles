@@ -1,0 +1,28 @@
+################################################################################
+# Color definitions
+################################################################################
+RED=$(tput setaf 1)
+GREEN=$(tput setaf 2)
+YELLOW=$(tput setaf 3)
+BLUE=$(tput setaf 4)
+
+BOLD=$(tput bold)
+RESET=$(tput sgr0)
+
+
+################################################################################
+# Helper functions
+################################################################################
+function parse_git_status {
+  git status 2> /dev/null | sed -e '/working directory clean$/!d' | wc -l;
+}
+
+function check_git_changes {
+  [ `parse_git_status` -ne 1 ] && echo $RED || echo $GREEN
+}
+
+
+################################################################################
+# Prompt
+################################################################################
+export PS1="\[${BLUE}\][\$(~/.rvm/bin/rvm-prompt i v g)]\[${YELLOW}\]\$(check_git_changes)\$(__git_ps1 '[%s]') \[${RESET}\]\W\$ "
