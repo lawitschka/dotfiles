@@ -1,0 +1,19 @@
+[user]
+  name = Moritz Lawitschka
+	email = me@moritzlawitschka.de
+
+[color]
+  # Use colors in Git commands that are capable of colored output when
+  # outputting to the terminal. (This is the default setting in Git ≥ 1.8.4.)
+  ui = auto
+
+[core]
+  # Use custom `.gitignore`
+  excludesfile = ~/.gitignore
+
+  # Make `git rebase` safer on OS X
+  # More info: <http://www.git-tower.com/blog/make-git-rebase-safe-on-osx/>
+  trustctime = false
+
+  # Use Sublime Test
+  editor = "subl -w"
