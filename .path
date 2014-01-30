@@ -1,0 +1,14 @@
+# Homebrew default binary folder
+PATH=/usr/local/sbin:/usr/local/bin:$PATH
+
+# RVM
+PATH=$PATH:$HOME/.rvm/bin
+
+# Heroku Toolbelt
+# PATH=$PATH:/usr/local/heroku/bin
+
+# Android development tools
+# PATH=$PATH:/usr/local/adt-bundle/sdk/platform-tools:/usr/local/adt-bundle/sdk/tools
+
+# Export final path to be available for sub-processes
+export PATH
