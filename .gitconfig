@@ -17,3 +17,7 @@
 
   # Use Sublime Test
   editor = "subl -w"
+
+[push]
+  # Use Git 2.0.0 push behaviour
+	default = simple
