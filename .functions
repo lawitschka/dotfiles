@@ -1,7 +1,7 @@
 # Sublime Text helper to automatically open project file if existent
 function project_aware_subl {
-    project_file=$(ls *.sublime-project 2>/dev/null | head -n 1)
-    subl ${*:-${project_file:-.}}
+  project_file=$(ls *.sublime-project 2>/dev/null | head -n 1)
+  subl ${*:-${project_file:-.}}
 }
 
 # Git Flow Helpers for SuitePad
