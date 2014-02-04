@@ -16,7 +16,7 @@
   trustctime = false
 
   # Use Sublime Test
-  editor = "subl -w"
+  editor = "subl -n -w"
 
 [push]
   # Use Git 2.0.0 push behaviour
