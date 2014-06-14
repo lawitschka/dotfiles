@@ -10,5 +10,8 @@ PATH=$PATH:$HOME/.rvm/bin
 # Android development tools
 # PATH=$PATH:/usr/local/adt-bundle/sdk/platform-tools:/usr/local/adt-bundle/sdk/tools
 
+# PostgreSQL
+PATH="/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH"
+
 # Export final path to be available for sub-processes
 export PATH
